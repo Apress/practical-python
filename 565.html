@@ -1,0 +1,107 @@
+<html><head><title>Errata for Practical Python</title>
+<style type="text/css">
+body {
+  color: #333;
+  /*margin: 0px 0px 0px 0px;*/
+  background-color: white;
+  font: 12px verdana, arial, helvetica, sans-serif;
+}
+
+code {
+  /*font-style: italic;*/
+  font-size: 12px;
+  font-family: verdana, arial, helvetica, sans-serif;
+}
+
+.error {
+  color: red;
+}
+
+.correction {
+  color: green;
+}
+
+.quote {
+  text-indent: 1cm;
+}
+</style></head>
+
+
+	<body>
+
+<h1>Errata for Practical Python</h1>
+
+<h2>Chapter 1</h2>
+
+<p>On page 26,</p>
+
+<p class="quote">String<span class="error">a</span> are values [...]</p>
+
+<p>should be</p>
+
+<p class="quote">String<span class="correction">s</span> are values [...]</p>
+
+<h2>Chapter 2</h2>
+
+<p>On page 111,</p>
+
+<p class="quote">[...] just change <code>while not name</code> to
+<span class="error"><code>while name.isspace()</code></span>.</p>
+
+<p>should be</p>
+
+<p class="quote">[...] just change <code>while not name</code> to
+<span class="correction"><code>while not name or name.isspace()</code></span>.</p>
+
+<p>or, alternatively,</p>
+
+<p class="quote"><font face="verdana, sans-serif" size="2">[...] just change <code>while not name</code> to
+<span class="correction"><code>while not name.strip()</code></span>.</font></p>
+
+<h2>Chapter 3</h2>
+
+<p>On page 64,</p>
+
+<p class="quote"><code>&gt;&gt;&gt; print format % value</p>
+
+<p>should be</p>
+
+<p class="quote"><code>&gt;&gt;&gt; print format % value<span
+class="correction">s</span></p>
+
+<h2>Appendix B</h2>
+
+<p>On page 580, in Table B-6, the description of the method
+<code>startswith</code> uses the word <span
+class="error">suffix</span> where it should use the word <span
+class="correction">prefix</span>. The description should
+read:</p>
+
+<p class="quote">Checks whether <em>string</em> starts with <em><span
+class="correction">prefix</span></em>, optionally restricting the
+matching with the given indices <em>start</em> and <em>end</em></p>
+
+<h2>Index</h2>
+
+<p>On Page 593,</p>
+
+<p class="quote"><span class="error">\ \;</span> (backticks),
+converting a Python value to a string with, 29</p>
+
+<p>should be</p>
+
+<p class="quote"><span class="correction">` `</font></span> (backticks),
+converting a Python value to a string with, 29</p>
+
+<p>Similarly, on page 594,</p>
+
+<p class="quote">backticks (<span class="error">\\</span>), converting
+objects to string representation with,</p>
+
+<p>should be:</p>
+
+<p class="quote">backticks (<span class="correction">``</span>),
+converting objects to string representation with,</p>
+
+
+</body></html>
